@@ -77,7 +77,7 @@
   </li>
 <br><br>
   <li>
-    UIDを取得してコピー（フォーマットはカンマ、改行両方可）
+    UIDを取得してコピー（formatはカンマ、改行両方可）
   </li>
 
 <p>
@@ -85,7 +85,7 @@
 </p>
 <br><br>
   <li>
-    スラッシュコマンド形式でコピーしたIDをBotに入力<br>
+    スラッシュコマンド形式で"random＿mention＿base62"を選択しコピーしたIDをBotに入力<br>
     注意：IDが多すぎるとdiscordの文字数制限にかかる為コマンドに入力できない場合があります<br><br>
     スマホの場合は ブラウザの設定 > PC版サイトで開く を行わないとアプリコマンドが表示されない可能性があります
   </li>
@@ -111,7 +111,7 @@
 
 <hr style="border: 1px dashed #ad0202; margin: 40px 0;">
 
-<h2><span class="headline">base62化ユーザーIDを使用する場合（推奨）</span></h2>
+<h2><span class="headline">base62化ユーザーIDを使用する場合（大規模鯖用）</span></h2>
 
 
 
@@ -123,7 +123,7 @@
 </p>
 
   <li>取得したユーザーIDをすべてコピー</li>
-  <li>Botのスラッシュコマンドで「ランダムメンション」を呼び出し、入力欄の形式を <strong>base62</strong> に変更</li>
+  <li>Botのスラッシュコマンドで"random＿mention＿base62"を選択し、入力欄の形式を <strong>base62</strong> に変更</li>
 <p>
 <img src="https://i.imgur.com/AvRbQ5U.png" alt="base62設定画面" style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4); margin:20px 0;">
 </p>
@@ -131,7 +131,7 @@
   <li>コピーしたbase62文字列をそのまま貼り付け</li>
 
 <p style="color:#ffaaaa; font-weight:bold;">
-BOTが自動的にbase52化IDを復元し通常のランダムメンションになります
+BOTが自動的にbase52化IDを復元し通常通りのランダムメンションになります
 </p>
 <p>
 <img src="https://i.imgur.com/N9PsVRV.png" alt="base62設定画面" style="max-width:100%; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.4); margin:20px 0;">
@@ -141,16 +141,12 @@ BOTが自動的にbase52化IDを復元し通常のランダムメンションに
 
 
             
-<h3 style="color:#00bfff; margin-top:30px;">base62化ユーザーIDを使用するメリット</h3>
-<ul style="line-height:1.8;">
+<h3 style="color:#00bfff; margin-top:30px;">base62化ユーザーIDを使用する場面</h3>
+
     
-  <li>通常の18桁のユーザーID（例: 123456789012345678）が base62 化すると大幅に短くなります<br>
-     （例: <code>8VwX9kL2pQ</code> のように10～12文字程度に）</li>
+  <li>通常のユーザーID（例: 123456789012345678）を base62化すると大幅に短くなり、アプリのID入力欄により多くIDを入れる事が出来る為、大規模鯖でもランダムメンションが行えますます<br>
     
-  <li>Discordのアプリコマンド引数文字数制限（最大4000文字）に引っかかりにくくなり</li>
-  <li>大規模のサーバーでもランダムメンションが可能になります</li>
-    
-</ul>
+
 
 
         </article>
